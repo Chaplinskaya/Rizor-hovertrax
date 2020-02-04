@@ -391,7 +391,7 @@ footer {
     .home__title_h5 {
       width: 100%; }
   .home__video {
-    width: 90%;
+    width: 80%;
     margin: 20px auto;
     left: 0; }
     .home__video_img {
@@ -488,8 +488,42 @@ footer {
     margin: 0 auto;
     text-align: center;
     padding-bottom: 20px; }
+  .advantages p, .modes p {
+    font-size: 16px; }
+  .speed_mode_container {
+    display: block;
+    width: 90%; }
+  .speed {
+    margin-bottom: 20px; }
+  .modes p {
+    font-size: 14px; }
   .home__video2 {
-    margin-left: 30px; }
+    margin-left: 10px; }
+  .home__video_play2 {
+    height: auto;
+    position: absolute;
+    z-index: 2000;
+    right: 600px;
+    top: 100px; }
+    .home__video_play2 img {
+      width: 35px; }
+    .home__video_play2 p {
+      width: 150px;
+      margin-left: -15px; }
+  .advantages__color_45 img {
+    width: 90%;
+    margin-left: -40px; }
+  .advantages__color p {
+    width: 70%; }
+  .video2_button {
+    margin: 0 auto;
+    margin-top: -60%;
+    margin-left: 45%;
+    position: absolute; }
+    .video2_button img {
+      width: 50px;
+      height: 50px;
+      z-index: 3000; }
   .advantages__design {
     text-align: center; }
     .advantages__design ul {
@@ -504,14 +538,27 @@ footer {
       width: 100%;
       text-align: center; }
       .home__title_h1 h1 {
-        font-size: 3em;
-        padding-top: 20px; }
+        font-size: 2em;
+        padding-top: 20px;
+        letter-spacing: 2px; }
+  .home__video_play {
+    width: 35px; }
+  .home__video_play p {
+    width: 100px;
+    font-size: 10px;
+    margin-right: -10px; }
+  .home__video img {
+    padding-left: 12px;
+    margin: 15px auto;
+    padding-right: 10px; }
+  .home__video_img {
+    margin: 0 auto; }
   .advantages {
-    margin-top: 500px; }
+    margin-top: 85%; }
     .advantages__home {
       display: block;
-      width: 100%;
-      margin: 0px auto; }
+      width: 75%;
+      margin: 20px auto; }
     .advantages__color {
       margin-top: 100px;
       margin: 100px auto; }
@@ -521,7 +568,7 @@ footer {
       display: block;
       margin-left: 0; }
   .advantages__modes {
-    width: 50%;
+    width: 90%;
     margin: 20px auto;
     text-align: center; }
   .home__video3 {
@@ -539,7 +586,7 @@ footer {
   .navigation__menu_item a {
     margin: 10px; }
   .advantages {
-    margin-top: 700px; }
+    margin-top: 85%; }
     .advantages__design {
       margin: 50px auto 50px;
       width: 80%;
@@ -554,8 +601,9 @@ footer {
       margin: 100px auto; }
     .advantages__home {
       display: block;
-      width: 70%;
-      margin: 20px auto; }
+      width: 80%;
+      margin: 20px auto;
+      margin-right: 40px; }
   .home__video2 {
     max-width: 100%;
     margin: 0 auto;
@@ -569,12 +617,13 @@ footer {
     margin-top: -65%;
     position: absolute; }
   .home__video_play2 {
-    width: 65px;
     height: auto;
     position: absolute;
     z-index: 2000;
     right: 600px;
     top: 100px; }
+    .home__video_play2 img {
+      width: 35px; }
   .modes {
     margin-top: 50px; }
     .modes__home {
