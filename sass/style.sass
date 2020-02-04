@@ -1,0 +1,714 @@
+$WidthAll: 1920px
+$WidthWrap: 1170
+$WidthCont: 1560px
+
+%item-flex
+	display: flex
+	flex-direction: row
+
+@mixin fontRoboto
+	font-family: 'Roboto', sans-serif
+	text-transform: uppercase
+
+@mixin fontRubik
+	font-family: 'Rubik Mono One', sans-serif
+
+@mixin backg-color($color)
+		background-color: $color
+
+html
+	font-size: 14px
+
+*
+	margin: 0
+	padding: 0
+
+img
+	margin: 0
+	padding: 0
+a
+	text-decoration: none
+
+body
+	background: #fff
+	background: url('../images/home.jpg')
+	background-repeat: no-repeat
+	font-family: 'Roboto', sans-serif
+	max-width: $WidthAll
+	width: 100%
+	position: relative
+	
+header
+	max-width: $WidthWrap + px
+	width: 100%
+	height: 100px
+	margin: 0 auto
+	position: relative
+
+.container
+	margin: 0  auto
+	padding: 0 20px
+
+.navigation-wrapper
+	
+	@extend %item-flex
+	justify-content: space-between
+	padding: 29px 0px
+	max-width: $WidthWrap
+
+	&__logo
+		width: 20%
+	
+		img
+			max-width: 100%
+			display: block
+
+	&__menu
+		width: 80%
+
+.navigation__menu_item
+	li
+	list-style: none
+	text-decoration: none
+	text-transform: uppercase
+	
+	a
+		@include fontRoboto
+		font-weight: 700
+		color: #000
+		font-size: 14px
+		text-decoration: none
+		letter-spacing: 1.12px
+		margin-left: 70px
+
+ul.navigation__menu
+	@extend %item-flex
+	list-style: none
+	justify-content: flex-end
+	line-height: 42px
+	
+.home
+	max-width: $WidthAll
+	width: 100%
+	margin: 0px auto
+	display: flex
+
+	&__title
+		max-width: $WidthWrap + px
+		width: 100%
+		margin: 0 auto
+		z-index: 100
+		position: relative
+
+		h1
+			font-size: 5.714em 
+			@include fontRubik
+			letter-spacing: 7px
+			font-weight: 400
+			text-align: left
+			padding:
+				top: 200px
+				left: 0px
+			transition-duration: 500ms
+			transition-property: letter-spacing
+
+			&:hover	
+				letter-spacing: 15px
+
+		h5
+			@include fontRoboto
+			font-size: 1.428em
+			letter-spacing: 1.650px
+			line-height: 30px
+			text-align: left
+		
+	&__title_h1
+		width: 650px
+
+	&__title_h5
+		width: 320px
+
+	&__video
+		position: absolute
+		right: 0
+
+	&__video_img
+		max-width: 1070px
+
+		img
+		width: 95%
+
+	&__video_play
+		width: 65px
+		height: auto
+		position: absolute
+		z-index: 2000
+		right: 1040px
+		top: 100px
+		opacity: 1
+
+		img
+			position: relative
+		
+		p
+			transform: rotate(-90deg)
+			transform-origin: left top 0
+			text-transform: uppercase
+			margin-left: -35px
+			margin-top: 65px
+			position: absolute
+			font-size: 12px
+			width: 75px
+
+%item-hover
+	opacity: 0.5
+
+.home__video_play:hover 
+	@extend %item-hover
+
+.video2_button:hover 
+	@extend %item-hover
+
+.home__video_play2:hover 
+	@extend %item-hover
+
+.footer__button:hover
+	@extend %item-hover
+
+.home__video2
+	max-width: 745px
+	width: 100%
+	display: block
+	position: relative
+
+	img
+		max-width: 745px
+		width: 100%
+
+.video2_button
+	margin: 0 auto
+	margin:
+		top: -60%
+		left: 45%
+	position: absolute
+
+	img
+		width: 100px
+		height: 100px
+		z-index: 3000
+	
+.advantages
+	margin-top: 350px
+	width: $WidthAll
+	max-width: 100%
+
+	&__color
+		display: flex
+		width: 370px
+		margin-top: 470px
+		padding:
+			left: 5%
+			right: 5px
+
+	&__color_circle
+		width: 20px
+		height: 20px
+		border-radius: 20px
+	
+	&__color_group
+		display: flex
+		margin-top: 65px
+
+	&__color_group > div:first-child
+		@include backg-color(#e2e837)
+		margin:
+			right: 35px
+			left: 20px
+
+	&__color_group > div:nth-child(2)
+		@include backg-color(#00b6f1)
+		margin-right: 35px
+
+	&__color_group > div:nth-child(3)
+		@include backg-color(#e23232)
+		margin-right: 35px
+
+	&__color_group > div:nth-child(4)
+		@include backg-color(#f0efef)
+		margin-right: 35px
+
+	&__color_group > div:nth-child(5)
+		@include backg-color(#000)
+
+	&__line
+		width: 17px
+		height: 290px
+		border:
+			left: 1px solid #cdcdcd
+			top: 1px solid #cdcdcd
+		margin:
+			right: 30px
+			top: 15px
+
+	&__color_45
+
+		width: 370px
+		height: 300px
+		margin-top: 32px
+		position: relative
+	
+		img
+			position: absolute
+			margin-left: -100px
+
+	&__design p, &__design li, &__color p, &__modes li, &__modes p
+		font-size: 18px
+		font-weight: 200
+		line-height: 25px
+
+	&__design li, &__modes li
+		list-style-type: none
+
+	&__design li:before, &__modes li:before
+		content: ""
+		display: inline-block
+		width: 30px
+		height: 5px
+		background: #000
+		margin-right: 15px
+
+h4
+	color: #3a30f8
+	text-transform: uppercase
+	letter-spacing: 1.6px
+	font-size: 1.43em
+	padding-bottom: 90px
+
+.advantages__home
+	@extend %item-flex
+	width: 100%
+
+h3
+	color: #000
+	font-size: 2.86em
+	@include fontRubik
+	letter-spacing: 3.2px
+	text-transform: uppercase
+	margin-bottom: 35px
+
+.advantages__design
+	margin-top: 100px
+	padding:
+		left: 5%
+		right: 5px
+	
+	div
+		width: 30px
+		height: 5px
+		background: #000	
+
+	p
+		padding-bottom: 40px
+
+.items p:first-child
+	padding-top: 40px
+
+.modes
+	margin-top: 240px
+	max-width: $WidthAll
+	width: 100%
+
+	&__home
+		@extend %item-flex
+		justify-items: end
+		margin: 0 auto
+		width: 100%
+		margin-left: 17%
+
+.home__video3
+	right: 0
+	position: relative
+
+.home__video_play2
+	width: 65px
+	height: auto
+	position: absolute
+	z-index: 2000
+	left: -20px
+	bottom: 100px
+
+	img
+		position: relative
+	
+	p
+		transform: rotate(-90deg)
+		transform-origin: left top 0
+		text-transform: uppercase
+		margin-left: -35px
+		margin-top: 65px
+		position: absolute
+		font-size: 12px
+		width: 75px
+
+.advantages__modes
+	max-width: 420px
+
+	ul
+		margin-top: 40px
+
+	li	
+		line-height: 40px
+
+.speed_mode_container
+	display: flex
+	justify-content: space-between
+	max-width: 330px
+	margin-top: 90px
+
+.speed p:first-child, .mode p:first-child
+	color: #3a2ff8
+	font-size: 42px
+	@include fontRubik
+
+.speed span
+	color: #3a2ff8
+	font-size: 20px
+	@include fontRubik
+	padding-left: 5px
+
+.speed p:nth-child(2), .mode p:nth-child(2)
+	color: #666666
+	font: 16px 
+
+footer
+	margin-top: 120px
+	background: url('../images/footer.png') no-repeat
+	background-size: cover
+	
+.footer
+	@extend %item-flex
+	max-width: $WidthAll
+	width: 100%
+	justify-items: end
+	margin-left: 19.5%
+
+	&__img_for
+		z-index: 1000
+		margin-top: -60px
+		position: relative
+	
+		img
+			max-width: 1175px
+			width: 100%
+
+	&__text
+		max-width: 300px
+		width: 100%
+		color: #fff
+		padding-right: 30px
+	
+		p
+			font-size: 16px
+			line-height: 30px
+	
+		h6
+			text-transform: uppercase
+			font-size: 24px
+			padding-top: 100px
+			padding-bottom: 85px
+	
+	&__button
+		color: blue
+		font-size: 16px
+		text-transform: uppercase
+		width: 270px
+		height: 50px
+		background: #fff
+		border-radius: 25px
+		margin-top: 50px
+		margin-bottom: 250px
+
+$xsmall: 320px
+$small: 640px
+$media: 960px
+$large: 1280px
+
+@media screen and (min-width: $xsmall) and (max-width: $large){
+
+.home
+	display: block
+	margin-top: 120px
+
+	&__title_h1
+		width: 100%
+		text-align: center
+	
+		h1
+			font-size: 4em
+			padding-top: 20px
+			text-align: center
+
+	&__title h5
+		text-align: center
+
+	&__title_h5
+		width: 100%
+
+.home__video
+	width: 90%
+	margin: 20px auto
+	left: 0
+	
+	&_img	
+		margin: 20px auto
+		position: relative
+	
+	img
+		margin: 30px auto
+		width: 100%
+		padding:
+			left: 30px
+			right: 30px
+
+	&_play
+		position: absolute
+		z-index: 2000
+		top: 100px
+		left: -15px
+		
+		p
+			margin-left: 0
+			margin-top: 85px
+
+.home__title
+	width: 100%
+	margin: 0 auto
+	z-index: 100
+	text-align: center
+
+.home__video3
+	max-width: 100%
+	width: 70%
+	margin: 0 auto
+
+.home__video3 .home__video_img
+	max-width: 100%
+
+.home__video3 .home__video_play2
+	right: 1300px}
+
+@media screen and (min-width: $media) and (max-width: $large){
+
+.advantages
+	margin-top: 800px
+	
+	&__home
+		display: block
+		width: 100%
+		margin: 0px auto
+
+	&__modes
+		margin-left: 20px
+
+	&__design
+		margin: 50px auto 100px
+		width: 100%
+		text-align: center
+	
+		ul
+			width: 50%
+			margin: 0 auto
+			text-align: left
+	&__color
+		margin-top: 100px
+		margin: 100px auto
+
+.home__video2
+	margin: 0 auto
+
+.modes
+	margin-top: 100px
+	
+	&__home
+		width: 100%
+		margin: 0 auto
+
+.footer
+	margin-left: 40px}
+
+@media screen and (min-width: $xsmall) and (max-width: $small){
+
+.navigation-wrapper
+	display: flex
+	flex-direction: column
+	width: 100%
+	margin: 0 auto
+	
+	&__menu
+		width: 100%
+
+ul.navigation__menu
+	display: flex
+	flex-direction: column
+	justify-content: left
+	line-height: 42px
+	width: 100%
+	text-align: center
+
+.navigation__menu a
+	margin-left: 0
+
+.navigation-wrapper__logo
+	width: auto
+	margin: 0 auto
+	text-align: center
+	padding-bottom: 20px
+
+.home__video2
+	margin-left: 30px
+
+.advantages__design
+	text-align: center
+	
+	ul
+		text-align: left
+		width: 80%
+		margin: 0 auto
+
+.home__title
+	width: 80%
+	margin: 0 auto
+	z-index: 100
+	
+	&_h1
+		width: 100%
+		text-align: center
+	
+		h1
+			font-size: 3em
+			padding-top: 20px
+
+.advantages
+	margin-top: 500px
+	
+	&__home
+		display: block
+		width: 100%
+		margin: 0px auto
+
+	&__color
+		margin-top: 100px
+		margin: 100px auto
+
+.modes
+	margin-top: 50px
+
+	&__home
+		display: block
+		margin-left: 0
+
+.advantages__modes
+	width: 50%
+	margin: 20px auto
+	text-align: center
+
+.home__video3
+	width: 85%
+
+footer
+	margin-top: 50px
+
+.footer
+	display: block
+	margin-left: 0
+	
+	&__text
+		width: 50%
+		margin: 0 auto}
+
+
+@media screen and (min-width: $small) and (max-width: $media){
+
+.navigation__menu_item a
+	margin: 10px
+
+.advantages
+	margin-top: 700px
+
+	&__design
+		margin: 50px auto 50px
+		width: 80%
+		text-align: center
+		padding-left: 0
+	
+		ul
+			text-align: left
+			width: 80%
+			margin: 0 auto
+
+	&__color
+		margin-top: 100px
+		margin: 100px auto
+
+	&__home
+		display: block
+		width: 70%
+		margin: 20px auto
+
+.home__video2
+	max-width: 100%
+	margin: 0 auto
+	position: relative
+	
+	img
+		max-width: 100%
+
+.video2_button
+	width: 100px
+	height: 100px
+	margin:
+		left: 43%
+		top: -65%
+	position: absolute
+	
+.home__video_play2
+	width: 65px
+	height: auto
+	position: absolute
+	z-index: 2000
+	right: 600px
+	top: 100px
+
+.modes
+	margin-top: 50px
+
+	&__home
+		display: block
+		margin-left: 0
+
+.advantages__modes
+	width: 70%
+	margin: 0 auto
+	text-align: center
+	
+	ul
+		width: 90%
+		margin: 0 auto
+		
+		li
+			text-align: left
+			padding:
+				left: 20px
+				top: 20px
+
+.speed_mode_container
+	margin: 0 auto
+	margin-top: 30px
+
+.footer
+	display: block
+	margin-left: 0
+
+	&__text
+		width: 50%
+		margin: 0 auto}
