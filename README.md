@@ -1,1 +1,1 @@
-# Rizor-hovertrax
+# Rizor-hovertrax landing page adaptive
